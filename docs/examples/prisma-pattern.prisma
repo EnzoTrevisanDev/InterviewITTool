@@ -1,0 +1,16 @@
+enum ChallengeType {
+  CODE
+  WHITEBOARD
+  QUIZ
+}
+
+model Challenge {
+  id          String        @id @default(cuid())
+  title       String
+  description String
+  type        ChallengeType
+  starterCode String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

@@ -1,0 +1,19 @@
+{
+  "name": "interview-plataform",
+  "version": "1.0.0",
+  "description": "",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build"
+  },
+  "keywords": [],
+  "author": "Enzo Trevisan",
+  "license": "ISC",
+  "devDependencies": {
+    "turbo": "^2.9.14"
+  }
+}
